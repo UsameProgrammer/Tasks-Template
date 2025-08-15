@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+}
+body {
+    background-color: rgb(180, 100, 190);
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    font-family: "Tajawal", sans-serif;
+}
+h2 , h3 , p {
+    margin: 0;
+}
+input {
+    width: 150px;
+}
+.main-table {
+    width: 70%;
+}
+.header {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    background-color: rgb(78, 23, 92);
+    color: white;
+    text-align: center;
+}
+#add-mission {
+    position: absolute;
+    top: 14px;
+    right: 5px;
+    cursor: pointer;
+}
+.content {
+    padding: 20px 10px;
+    background-color: rgba(255, 255, 255, 0.87);
+    color: black;
+    width: calc(100% -20px);
+    display: flex;
+    flex-direction: column;
+}
+.mission {
+    border-bottom: 1px solid black;
+    padding: 10px 0px 5px 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+.done {
+    background-color: rgb(84, 252, 84);
+}
+.mission:hover {
+    box-shadow: 0 0 8px 4px rgb(0, 0, 0 , 0.2);
+}
+.mission-date {
+    display: flex;
+    margin-top: 2px;
+}
+.fa-calendar-days {
+    margin-left: 5px;
+}
+.mission-statu {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+.mission-statu i {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 20px;
+    cursor: pointer;
+    color: white;
+}
+.fa-trash {
+    background-color: rgb(199, 15, 15);
+}
+.fa-check {
+    background-color: rgb(24, 185, 24);
+}
+.fa-pen {
+    background-color: rgb(67, 67, 241);
+}
+.fa-xmark {
+    background-color: red;
+}
